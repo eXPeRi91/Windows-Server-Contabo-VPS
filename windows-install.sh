@@ -64,9 +64,9 @@ cd /root/windisk
 
 mkdir winfile
 
-wget -O win10.iso --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" https://bit.ly/4aCjkM2
+wget -O win.iso --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" https://www.bulgarian-legion.eu/win.iso
 
-mount -o loop win10.iso winfile
+mount -o loop win.iso winfile
 
 rsync -avz --progress winfile/* /mnt
 
